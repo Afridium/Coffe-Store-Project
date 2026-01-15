@@ -1,4 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 @plugin "daisyui"{
   themes: light --default
 };
+.font-rancho{
+  font-family: "Rancho", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.font-raleway {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navbar-bg{
+  background-image: url("./assets/images/more/15.jpg");
+  background-position: center;
+}
+
+.home-bg{
+  background-image: url("../src/assets/images/more/3.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer-bg{
+  background-image: url("../src/assets/images/more/13.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cp-bg{
+  background-image: url("../src/assets/images/more/24.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
