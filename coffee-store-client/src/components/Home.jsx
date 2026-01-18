@@ -3,7 +3,11 @@ import aroma from '../assets/images/icons/1.png';
 import hq from '../assets/images/icons/2.png';
 import pg from '../assets/images/icons/3.png';
 import pr from '../assets/images/icons/4.png';
+import FollowSocials from './FollowSocials';
+import CoffeeList from './CoffeeList';
+import { useLoaderData } from 'react-router';
 const Home = () => {
+    const coffeeList = useLoaderData();
     return (
         <div>
             <div className='home-bg w-full h-[calc(100vh-4.5rem)] flex flex-col justify-center items-center lg:items-end'>
@@ -35,6 +39,8 @@ const Home = () => {
                     <p className='font-raleway text-xs'>Your coffee is brewed by first roasting the green coffee beans</p>
                 </div>
             </div>
+            <CoffeeList coffeeList={coffeeList}></CoffeeList>
+            <FollowSocials></FollowSocials>
         </div>
 
     );
