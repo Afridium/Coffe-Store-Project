@@ -43,12 +43,11 @@ async function run() {
 
     app.post('/coffees', async(req, res)=>{
       const newCoffee = req.body;
-      console.log(newCoffee);
       const result = await coffeeCollection.insertOne(newCoffee);
       res.send(result);
     })
 
-    app.put('coffees/:id', async(req, res)=>{
+    app.put('/coffees/:id', async(req, res)=>{
       const id = req.params.id;
       const filter = {_id: new ObjectId(id)};
       const options = {upsert: true};

@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaArrowLeft } from "react-icons/fa";
+import { Link } from 'react-router';
 import Swal from 'sweetalert2'
 
 const AddCoffee = () => {
@@ -30,7 +31,8 @@ const AddCoffee = () => {
     return (
         <div className='w-screen h-[calc(100vh-6rem)] flex items-center flex-col my-11'>
             <div className='self-start ml-10 mt-8'>
-                <button className='font-rancho btn hover:bg-[#d2b48c]'><FaArrowLeft />Back To Home</button>
+                <Link to={'/'}><button className='font-rancho btn hover:bg-[#d2b48c]'><FaArrowLeft />Back To Home</button></Link>
+                
             </div>
             <div className='lg:w-[50%] bg-[#f4f3f0] rounded-[5px] py-4 px-7 lg:px-16 text-center m-auto'>
                 <h1 className='font-rancho font-extrabold text-3xl my-5'>Add a Coffee</h1>
